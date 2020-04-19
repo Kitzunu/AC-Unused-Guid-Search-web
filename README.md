@@ -1,11 +1,9 @@
 AC-Unused-Guid-Search-web
 =========================
 
-A tool to search for unused GUID's in Azerothcore, originally built by [Shin](https://github.com/FrancescoBorzi)
+A tool to search for unused GUID's in Azerothcore, originally built for [Trinitycore](https://github.com/Trinitycore/Trinitycore) by [Shin](https://github.com/FrancescoBorzi)
 
 [Azerothcore](https://github.com/Azerothcore/Azerothcore-wotlk) 
-
-[TrinityCore](https://github.com/TrinityCore/TrinityCore)
 
 - creature
 - gameobject
