@@ -15,7 +15,7 @@ A tool to search for unused GUID's in Azerothcore, originally built by [Shin](ht
 - creature_equip_template
 - trinity_string
 
-# ![logo](https://raw.githubusercontent.com/Kitzunu/AC-Unused-Guid-Search-web/Azerothcore/img/acpreview.png)
+# ![logo](https://raw.githubusercontent.com/Kitzunu/AC-Unused-Guid-Search-web/Azerothcore/img/acpreview.PNG)
 
 ### License
 
