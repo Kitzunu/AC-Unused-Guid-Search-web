@@ -1,7 +1,11 @@
-TC-Unused-Guid-Search-web
+AC-Unused-Guid-Search-web
 =========================
 
-[TrinityCore](https://github.com/TrinityCore/TrinityCore) DataBase Developer Tool to find free GUIDs of following tables:
+A tool to search for unused GUID's in Azerothcore, originally built by [Shin](https://github.com/FrancescoBorzi)
+
+[Azerothcore](https://github.com/Azerothcore/Azerothcore-wotlk) 
+
+[TrinityCore](https://github.com/TrinityCore/TrinityCore)
 
 - creature
 - gameobject
