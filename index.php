@@ -60,15 +60,15 @@ if (isset($_GET['table']) && $_GET['table'] != "")
 }
 
 // make guid search guid continous disabled by default
-$continuos_checked = "unchecked";
+$consecutive_checked = "unchecked";
 
-if (isset($_GET['continuos']) && $_GET['continuos'] == "on")
+if (isset($_GET['consecutive']) && $_GET['consecutive'] == "on")
 {
-  $continuos = true;
+  $consecutive = true;
 }
 else
 {
-  $continuos = false;
+  $consecutive = false;
 }
 
 ?>
@@ -119,7 +119,7 @@ else
         </div>
         <div class="checkbox">
           <label>
-            <input name="continuos" type="checkbox" <?= $continuos_checked ?>> Continuous
+            <input name="consecutive" type="checkbox" <?= $consecutive_checked ?>> Consecutive
           </label>
         </div>
         <button type="submit" class="btn btn-success">Search</button>
@@ -167,7 +167,7 @@ if (isset($_GET['table'])  && $_GET['table'] != null)
 
   echo "<div><pre>";
 
-  if ($continuos)
+  if ($consecutive)
   {
     while (($row = mysqli_fetch_row($result)) != null)
     {
