@@ -51,10 +51,10 @@ if (isset($_GET['table']) && $_GET['table'] != "")
       $table_creature_equip_template_sel = "selected";
       break;
 
-    case $table_trinity_string:
+    case $table_acore_string:
       $table = "acore_string";
       $param = "entry";
-      $table_trinity_string_sel = "selected";
+      $table_acore_string_sel = "selected";
       break;
   }
 }
@@ -102,7 +102,7 @@ else
             <option value="<?= $table_pool_template ?>"<?= $table_pool_template_sel ?>>pool_template</option>
             <option value="<?= $table_game_event ?>"<?= $table_game_event_sel ?>>game_event</option>
             <option value="<?= $table_creature_equip_template ?>"<?= $table_creature_equip_template_sel ?>>creature_equip_template</option>
-            <option value="<?= $table_trinity_string ?>"<?= $table_trinity_string_sel ?>>acore_string</option>
+            <option value="<?= $table_acore_string ?>"<?= $table_acore_string_sel ?>>acore_string</option>
           </select>
         </div>
         <div class="form-group">
