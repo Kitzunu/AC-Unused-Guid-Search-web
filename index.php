@@ -89,7 +89,7 @@ else
   </head>
   <body>
     <div class="container">
-      <p class="h2 text-center"><img src="img/trinitycore.png" alt="TrinityCore">TrinityCore Unused Guid Search Tool</p>
+      <p class="h2 text-center"><img src="img/Azerothcore.png" alt="Azerothcore" style="width:124px;height:82px;">Azerothcore Unused Guid Search Tool</p>
       <hr>
 
       <form style="margin: auto;" class="form-inline" role="form" method="GET">
