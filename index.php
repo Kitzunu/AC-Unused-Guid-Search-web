@@ -7,9 +7,9 @@ $table_waypoint_scripts = 3;
 $table_pool_template = 4;
 $table_game_event = 5;
 $table_creature_equip_template = 6;
-$table_trinity_string = 7;
+$table_acore_string = 7;
 
-$table_creature_sel = $table_gameobject_sel = $table_waypoint_scripts_sel = $table_pool_template_sel = $table_game_event_sel = $table_creature_equip_template_sel = $table_trinity_string_sel = "";
+$table_creature_sel = $table_gameobject_sel = $table_waypoint_scripts_sel = $table_pool_template_sel = $table_game_event_sel = $table_creature_equip_template_sel = $table_acore_string_sel = "";
 
 if (isset($_GET['table']) && $_GET['table'] != "")
 {
@@ -52,7 +52,7 @@ if (isset($_GET['table']) && $_GET['table'] != "")
       break;
 
     case $table_trinity_string:
-      $table = "trinity_string";
+      $table = "acore_string";
       $param = "entry";
       $table_trinity_string_sel = "selected";
       break;
@@ -96,13 +96,13 @@ else
         <div class="form-group">
           <strong>Table:</strong>
           <select name="table" class="text-center">
-            <option value="<?= $table_creature ?>"<?= $table_creature_sel ?>>`creature`</option>
-            <option value="<?= $table_gameobject ?>"<?= $table_gameobject_sel ?>>`gameobject`</option>
-            <option value="<?= $table_waypoint_scripts ?>"<?= $table_waypoint_scripts_sel ?>>`waypoint_scripts`</option>
-            <option value="<?= $table_pool_template ?>"<?= $table_pool_template_sel ?>>`pool_template`</option>
-            <option value="<?= $table_game_event ?>"<?= $table_game_event_sel ?>>`game_event`</option>
-            <option value="<?= $table_creature_equip_template ?>"<?= $table_creature_equip_template_sel ?>>`creature_equip_template`</option>
-            <option value="<?= $table_trinity_string ?>"<?= $table_trinity_string_sel ?>>`trinity_string`</option>
+            <option value="<?= $table_creature ?>"<?= $table_creature_sel ?>>creature</option>
+            <option value="<?= $table_gameobject ?>"<?= $table_gameobject_sel ?>>gameobject</option>
+            <option value="<?= $table_waypoint_scripts ?>"<?= $table_waypoint_scripts_sel ?>>waypoint_scripts</option>
+            <option value="<?= $table_pool_template ?>"<?= $table_pool_template_sel ?>>pool_template</option>
+            <option value="<?= $table_game_event ?>"<?= $table_game_event_sel ?>>game_event</option>
+            <option value="<?= $table_creature_equip_template ?>"<?= $table_creature_equip_template_sel ?>>creature_equip_template</option>
+            <option value="<?= $table_trinity_string ?>"<?= $table_trinity_string_sel ?>>acore_string</option>
           </select>
         </div>
         <div class="form-group">
