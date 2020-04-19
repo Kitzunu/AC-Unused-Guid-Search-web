@@ -59,8 +59,8 @@ if (isset($_GET['table']) && $_GET['table'] != "")
   }
 }
 
-// make guid search guid continous enabled by default
-$continuos_checked = "checked";
+// make guid search guid continous disabled by default
+$continuos_checked = "unchecked";
 
 if (isset($_GET['continuos']) && $_GET['continuos'] == "on")
 {
@@ -81,7 +81,7 @@ else
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Unused Guid Search">
     <meta name="author" content="ShinDarth">
-    <title>TC Unused Guid Search</title>
+    <title>AC Unused Guid Search</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -114,7 +114,7 @@ else
         <div class="form-group">
           <div class="input-group">
             <div class="input-group-addon">GUID amount:</div>
-            <input name="amount" style="max-width: 80px;" class="form-control" type="text" value="<?php  if (isset($_GET['amount'])) { echo $_GET['amount']; } ?>" placeholder="10">
+            <input name="amount" style="max-width: 80px;" class="form-control" type="text" value="<?php  if (isset($_GET['amount'])) { echo $_GET['amount']; } ?>" placeholder="1">
           </div>
         </div>
         <div class="checkbox">
@@ -137,7 +137,7 @@ if (isset($_GET['table'])  && $_GET['table'] != null)
   if (isset($_GET['amount']) && $_GET['amount'] != null)
     $amount = $_GET['amount'];
   else
-    $amount = 10;
+    $amount = 1;
 
   $query_max_min = sprintf("SELECT MAX(%s), MIN(%s) FROM %s", $param, $param, $table);
   $result_max_min = $db->query($query_max_min);
@@ -186,8 +186,6 @@ if (isset($_GET['table'])  && $_GET['table'] != null)
           printf("%d<br>", $i);
           $count++;
         }
-
-        printf("<br>");
         break;
       }
 
@@ -213,8 +211,6 @@ if (isset($_GET['table'])  && $_GET['table'] != null)
           printf("%d<br>", $i);
           $count++;
         }
-
-        printf("<br>");
       }
 
       $last = $current;
